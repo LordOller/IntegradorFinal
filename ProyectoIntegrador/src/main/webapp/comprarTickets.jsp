@@ -84,6 +84,7 @@
             <button  class="boton-click" id="borrar" type="button">Eliminar</button>
             <button class="boton-click" id="resumen" type="submit">Modificar</button>
             <button class="boton-click" id="resumen" onclick="location.href='index.html'" type="button">Confirmar</button>
+            <button class="boton-click" id="resumen" onclick="location.href='MostrarTicktes.jsp'" type="button">Mostrar Tickets</button>
         </div>
         </form>
         

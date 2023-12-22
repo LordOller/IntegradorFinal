@@ -6,7 +6,7 @@ public class ValorTickets {
 	private String nombre;
 	private String apellido;
 	private String email;
-	private int cantidad;
+	private int cantidad =0;
 	private String categoria;
 	
 	public ValorTickets() throws SQLException {
@@ -19,11 +19,12 @@ public class ValorTickets {
 			ResultSet rs = ps.executeQuery();
 			
 			while(rs.next()){
-				 this.nombre = rs.getString(1);
-				 this.apellido = rs.getString(2);
-				 this.email = rs.getString(3);
-				 this.cantidad = rs.getInt(4);
-				 this.categoria = rs.getString(5);
+				 this.nombre = rs.getString(2);
+				 this.apellido = rs.getString(3);
+				 this.email = rs.getString(4);
+				 this.cantidad = rs.getInt(5);
+				 this.categoria = rs.getString(6);
+				 int Activo = rs.getInt(7);
 				}
 	}
 
